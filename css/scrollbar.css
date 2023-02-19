@@ -1,0 +1,30 @@
+#app__scrollbar {
+    position: relative;
+    overflow: hidden;
+}
+#app__scrollbar > .app__scrollable__content {
+    overflow: hidden;
+    height: 100%;
+    padding-right: 10px; /* to account for the width of the scrollbar */
+    -webkit-overflow-scrolling: touch; /* this enables smooth scrolling on iOS devices */
+    scroll-behavior: smooth;
+    scroll-behavior: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#app__scrollbar > #app__scrollbar__track {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px; /* width of the scrollbar track */
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+#app__scrollbar > #app__scrollbar__track > .app__scrollbar__thumb {
+    position: absolute;
+    top: 0;
+    width: 5px; /* width of the scrollbar thumb */
+    background-color: #888;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: top 0.2s ease-out;
+}
