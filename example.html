@@ -38,18 +38,18 @@
         }
         .wrapper {
             width: 640px;
-            height: 600px;
+            height: auto;
             border-radius: 4px;
             margin: 0 auto;
             background: #fff;
             box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
-            padding: 15px 0;
-            overflow: hidden;
+            padding: 15px 2px 30px;
         }
         #app__scrollbar {
             margin: 10px auto;
-            padding: 0 20px;
+            padding: 0 15px;
             overflow: hidden;
+            height: 540px;
         }
         h2 {
            font-size: 1.3rem; 
@@ -65,8 +65,12 @@
 <body>
     <main>
         <div class="wrapper">
-            <h1>Custom JS Scrollbar</h1>
-
+            <!-- Header Text -->
+            <header>
+                <h1>Custom JS Scrollbar</h1>
+            </header>
+            <!-- /Header Text -->
+            
             <!-- Scrollbar Container -->
             <div id="app__scrollbar">
                 <div class="app__scrollable__content">

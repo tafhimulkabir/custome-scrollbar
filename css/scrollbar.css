@@ -18,6 +18,10 @@
     width: 5px; /* width of the scrollbar track */
     background-color: #f1f1f1;
     border-radius: 5px;
+    display: none;
+}
+#app__scrollbar:hover > #app__scrollbar__track {
+   display: block;
 }
 #app__scrollbar > #app__scrollbar__track > .app__scrollbar__thumb {
     position: absolute;
