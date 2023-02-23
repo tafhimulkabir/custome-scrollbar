@@ -1,0 +1,11 @@
+class CustomScrollbar {
+
+    /**
+     * Constryusctor 
+     */
+    constructor()
+    {
+        
+    }
+
+}
