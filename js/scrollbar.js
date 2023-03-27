@@ -33,5 +33,9 @@ class CustomScrollbar {
     handleScroll()
     {
         const scrollPercentage = (this.content.scrollTop / (this.content.scrollHeight - this.content.clientHeight)) * 100;
+        const thumbPosition = scrollPercentage * (this.appScrollbarTrack.clientHeight - this.appScrollbarThumb.clientHeight) / 100;
+        requestAnimationFrame(() => {
+            this.appScrollbarThumb.style.top = thumbPosition + 'px';
+        });
     }
 }
